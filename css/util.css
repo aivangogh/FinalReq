@@ -1,0 +1,99 @@
+@font-face {
+  font-family: 'Helvetica';
+  src: url('../assets/font/Helvetica.ttf');
+}
+
+@font-face {
+  font-family: 'Helvetica';
+  font-weight: bold;
+  src: url('../assets/font/Helvetica-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 400;
+  src: url('../assets/font/Montserrat-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 500;
+  src: url('../assets/font/Montserrat-Medium.ttf');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: bold;
+  src: url('../assets/font/Montserrat-Bold.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary-color: #007ce8;
+  --accent-color: #023d7d;
+  --box-height: 2.7rem;
+  --input-padding: 0.8rem;
+  --accent-color-2: #6c737d;
+  --outline-color: #c9c9c9;
+  --space-gap: 30px;
+  --radius: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+input,
+button,
+select {
+  outline: none;
+  background-color: #fff;
+}
+
+.input-header {
+  display: block;
+  font-size: 0.9em;
+  padding: 2px;
+  font-family: 'Montserrat';
+}
+
+.input-container select {
+  background-color: #fff;
+  color: var(--accent-color-2);
+}
+
+.password-field {
+  display: flex;
+  flex-direction: row;
+}
+
+.password-button {
+  background-color: var(--accent-color-2);
+  height: var(--box-height);
+  width: 6em;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.password-icon {
+  height: 1rem;
+  filter: invert(100%) sepia(100%) saturate(2%) hue-rotate(353deg)
+    brightness(105%) contrast(101%);
+}
+
+.password-button:hover {
+  background-color: #595f68;
+}
+
+

@@ -1,0 +1,176 @@
+
+body {
+  font-family: 'Helvetica', sans-serif;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 45% 55%;
+  height: 100vh;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header {
+  flex-basis: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--accent-color);
+}
+
+.header .elearn-header {
+  font-size: 3.5em;
+}
+
+.side-image {
+  flex-basis: 70%;
+}
+
+.side-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.right-column {
+  background-color: var(--primary-color);
+  color: #fff;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 2fr 0.5fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.logo .buksu-logo {
+  height: 12em;
+}
+
+form {
+  width: 25rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.8rem;
+  padding: var(--space-gap) 0;
+}
+
+#login-error {
+  background-color: rgba(255, 0, 0, 0.6);
+  width: 25rem;
+  height: var(--box-height);
+  padding: 5px;
+  border-radius: 5px;
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.error-message {
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.icon {
+  padding: 8px;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #e0e4e5;
+}
+
+.input-container {
+  display: flex;
+  width: 100%;
+  height: var(--box-height);
+}
+
+.input-container img {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0.6rem;
+}
+
+.input-container input {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input-field {
+  border: none;
+  padding: var(--input-padding);
+  width: 100%;
+  background-color: #fff;
+  font-size: 1em;
+}
+
+.input-field:disabled {
+  background-color: #e0e4e5;
+}
+
+.input-field::placeholder {
+  background-color: #fff;
+}
+
+#login-button {
+  background-color: var(--accent-color);
+  color: #fff;
+  width: 100%;
+  height: var(--box-height);
+  border: none;
+  border-radius: 15px;
+  font-weight: bold;
+  font-size: 1.1em;
+  cursor: pointer;
+}
+
+#login-button:hover {
+  background-color: #03356b;
+}
+
+#login-button:disabled {
+  background-color: #03356b;
+  cursor: not-allowed;
+}
+
+.forgot-password {
+  color: var(--accent-color);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+.sign-up {
+  text-align: center;
+  font-size: 1rem;
+}
+
+.sign-up a {
+  color: var(--accent-color);
+  font-weight: bold;
+}
+
+.sign-up a:hover {
+  text-decoration: underline;
+}

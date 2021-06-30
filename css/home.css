@@ -1,0 +1,321 @@
+@font-face {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  src: url('../font/Montserrat-Regular.ttf');
+}
+
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f4f3ef;
+  height: 100vh;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='tel'],
+input[type='password'],
+select {
+  background-color: #fff;
+  width: 100%;
+  height: var(--box-height);
+  padding: 5px 10px;
+  border: 1px var(--outline-color) solid;
+  border-radius: 3px;
+  outline: none;
+  font-size: 1rem;
+  font-family: 'Montserrat';
+  font-weight: 500;
+}
+
+.disabled:disabled {
+  background-color: #e3e3e3;
+  color: #333;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: var(--radius);
+  box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  padding: 4rem;
+  height: 100%;
+  gap: 3.5rem;
+}
+
+.left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.user-card-profile,
+.calendar-widget {
+  height: 50%;
+}
+
+/** USER CARD PROFILE */
+.user-card-profile {
+  display: flex;
+  flex-direction: column;
+  font-family: 'Montserrat';
+}
+
+.user-card-profile .bg-image {
+  background-image: url('../assets/images/buksu-background.jpg');
+  height: 10rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-top-left-radius: var(--radius);
+  border-top-right-radius: var(--radius);
+}
+
+.user-card-profile .profile-picture {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture img {
+  height: 8.5em;
+  margin-top: -55px;
+}
+
+.user-card-profile .user-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  padding: 1em 0 2em 0;
+}
+
+.user-info #user-name {
+  text-transform: uppercase;
+  color: #333;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.user-info .course {
+  display: flex;
+  height: 2.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-info #user-course,
+#user-year {
+  color: #333;
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.user-info #user-college {
+  color: #333;
+  font-size: 0.9em;
+}
+
+.user-info #user-email {
+  color: #333;
+  font-size: 0.8em;
+}
+
+/** CALENDAR WIDGET */
+.calendar-widget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.calendar {
+  font-size: 0.8rem;
+  height: 100%;
+  width: 100%;
+}
+
+.month {
+  width: 100%;
+  height: 5rem;
+  background-color: #3f9efa;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  padding: 1em;
+  text-transform: uppercase;
+  gap: 0.5em;
+  border-top-right-radius: var(--radius);
+  border-top-left-radius: var(--radius);
+}
+
+.weekdays {
+  color: var(--accent-color-2);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1em 0;
+  text-transform: uppercase;
+}
+
+.weekdays div {
+  width: calc(100% / 7);
+  text-align: center;
+}
+
+.days {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 1rem;
+  font-weight: bold;
+  height: calc(90% - (5rem + 1em));
+}
+
+.days div {
+  width: calc(100% / 7);
+  text-align: center;
+}
+
+.prev-days,
+.next-days {
+  color: #c0c0c0;
+}
+
+/** USER PROFILE */
+.user-profile {
+  color: #333;
+  height: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Montserrat';
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile-header span {
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.profile-header .logout-btn {
+  font-family: 'Montserrat';
+  background-color: #0062cd;
+  color: #fff;
+  height: var(--box-height);
+  width: 10rem;
+  border-radius: var(--radius);
+  border: none;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.profile-header .logout-btn:hover {
+  background-color: #03356b;
+}
+
+.id-and-email-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--space-gap);
+}
+
+.full-name-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-gap);
+}
+
+.phone-and-gender-container {
+  display: flex;
+  align-items: center;
+  gap: var(--space-gap);
+}
+
+.college-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas:
+    'college space'
+    'course year';
+  gap: var(--space-gap);
+}
+
+.college {
+  grid-area: college;
+}
+
+.course {
+  grid-area: course;
+}
+
+.year {
+  grid-area: year;
+}
+
+.password-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-gap);
+}
+
+.update-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.radio-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.radio-container .radio-gender {
+  height: var(--box-height);
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 500;
+  gap: 1rem;
+  text-transform: uppercase;
+}
+
+#update-profile-button {
+  width: 15em;
+  height: var(--box-height);
+  background-color: #0062cd;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1em;
+  font-family: 'Montserrat';
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  outline: none;
+}
+
+#update-profile-button:hover {
+  background-color: #03356b;
+}
